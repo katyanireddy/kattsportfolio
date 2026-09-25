@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Katyani Reddy — AI/ML student, software builder, and creative technologist." />
+    <title>Katyani.exe — portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="pixel-pal" aria-hidden="true"><span>◕</span><i></i><i></i></div>
+
+    <div class="boot-screen" id="boot-screen" role="dialog" aria-modal="true" aria-labelledby="boot-title">
+      <div class="boot-stars" aria-hidden="true"></div>
+      <div class="boot-panel">
+        <p class="eyebrow light">01 / starting a small universe</p>
+        <h1 id="boot-title">KATYANI<span>.EXE</span></h1>
+        <p class="boot-message" id="boot-message">initializing creative mind...</p>
+        <div class="load-row">
+          <div class="load-track" aria-label="Loading portfolio" aria-valuemin="0" aria-valuemax="100" role="progressbar"><span id="load-progress"></span></div>
+          <span id="load-percent">0%</span>
+        </div>
+        <p class="boot-path">IDEAS&nbsp;&nbsp;›&nbsp;&nbsp;CODE&nbsp;&nbsp;›&nbsp;&nbsp;CHAOS&nbsp;&nbsp;›&nbsp;&nbsp;YOU ARE HERE</p>
+        <button class="boot-enter" id="boot-enter" disabled>[ PRESS ENTER ]</button>
+        <button class="skip-button" id="skip-boot">skip the intro ↗</button>
+      </div>
+      <div class="boot-terminal" aria-hidden="true">
+        <span>› portfolio</span><span>› version 2.0</span><span>› loading assets...</span><span>› almost there :)</span>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="logo" href="#home" aria-label="Katyani home">KATYANI.EXE</a>
+      <button class="mobile-menu" id="mobile-menu" aria-expanded="false" aria-controls="site-nav">MENU <span>+</span></button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#profile">WHO'S THIS?</a>
+        <a href="#missions">BUILT THIS.</a>
+        <a href="#toolkit">MY TOOLKIT.</a>
+        <a href="#resume">RESUME.</a>
+        <a href="#side-quests">SIDE QUESTS.</a>
+        <a href="#contact">LET'S TALK.</a>
+      </nav>
+      <button id="recruiter-toggle" class="recruiter-toggle" type="button">
+  RECRUITER MODE
+  <span class="toggle-dot"></span>
+</button>
+      <button class="heart-button" id="heart-button" aria-label="A small friendly surprise">♡</button>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">// new player detected</p>
+          <h2>Hi, I’m <em>Katyani.</em></h2>
+          <p class="hero-intro">I build things that usually start with <span>“what if...”</span></p>
+          <p class="hero-tags">AI/ML <b>•</b> SOFTWARE <b>•</b> PRODUCT <b>•</b> CREATIVE TECH</p>
+          <a class="primary-button magnetic" href="#missions">EXPLORE MY WORLD <span>→</span></a>
+          <div class="recruiter-quick-info">
+
+  <div>
+    <span>FOCUS</span>
+    <strong>AI / ML · SOFTWARE · PRODUCT</strong>
+  </div>
+
+  <div>
+    <span>BASED IN</span>
+    <strong>BANGALORE, INDIA</strong>
+  </div>
+
+  <div>
+    <span>STATUS</span>
+    <strong>OPEN TO OPPORTUNITIES</strong>
+  </div>
+
+</div>
+          <p class="scroll-note">scroll<br />if you're curious ↓</p>
+        </div>
+        
+
+        <div class="hero-stage" aria-label="A creative desktop collage">
+          <div class="doodle doodle-star">✧</div>
+          <div class="doodle doodle-scribble">same girl.<br />different tab. ♡</div>
+          <div class="interactive-portrait" id="interactive-portrait">
+
+  <div class="portrait-image-wrap">
+
+  <img
+    src="assets/hero-character.png"
+    alt="Katyani creative portrait"
+    class="hero-character-image"
+  />
+
+ 
+</div>
+
+  <div class="portrait-label">
+    <span>MAIN CHARACTER</span>
+    <em>(still loading)</em>
+  </div>
+
+  <span class="portrait-star">✦</span>
+  <span class="portrait-heart">♡</span>
+
+</div>
+          <article class="float-window window-build" data-parallax="12">
+            <div class="window-bar"><i></i><span>locly.exe</span><b>×</b></div>
+            <p>building...</p><div class="tiny-load"><span></span></div>
+          </article>
+          <article class="float-window window-ideas" data-parallax="-9">
+            <div class="window-bar"><i></i><span>ideas.txt</span><b>×</b></div>
+            <p>+ build<br />+ explore<br />+ create<br />+ repeat ♡</p>
+          </article>
+          <article class="float-window window-current" data-parallax="7">
+            <div class="window-bar"><i></i><span>currently_building</span><b>×</b></div>
+            <p class="online"><span></span> ONLINE</p>
+            <p><b>CURRENTLY:</b><br />building ideas<br />experimenting with AI<br />breaking things<br />fixing them again<br />:)</p>
+          </article>
+        </div>
+      </section>
+      
+
+
+      <section class="world-map-section section-shell" id="world-map">
+  <div class="section-label">01 / EXPLORE</div>
+
+  <div class="world-map-heading">
+    <div>
+      <p class="eyebrow">// choose your destination</p>
+      <h2>MY<br><em>WORLD.</em></h2>
+    </div>
+
+    <div class="world-status">
+      <span class="status-dot"></span>
+      <span id="map-status">YOU ARE HERE</span>
+    </div>
+  </div>
+
+  <div class="world-map">
+
+    <div class="map-grid"></div>
+
+ 
+
+    <!-- ABOUT -->
+    <button
+      class="world-location location-about"
+      data-map-target="profile"
+      type="button"
+    >
+      <span class="location-icon">✦</span>
+      <span class="location-name">ABOUT</span>
+      <small>WHO'S THIS?</small>
+    </button>
+
+    <!-- WORK -->
+    <button
+      class="world-location location-work"
+      data-map-target="missions"
+      type="button"
+    >
+      <span class="location-icon">◆</span>
+      <span class="location-name">WORK</span>
+      <small>BUILT THIS.</small>
+    </button>
+
+    <!-- SIDE QUESTS -->
+    <button
+      class="world-location location-side"
+      data-map-target="side-quests"
+      type="button"
+    >
+      <span class="location-icon">★</span>
+      <span class="location-name">SIDE QUESTS</span>
+      <small>LIFE OUTSIDE CODE</small>
+    </button>
+
+    <!-- TOOLKIT -->
+    <button
+      class="world-location location-toolkit"
+      data-map-target="toolkit"
+      type="button"
+    >
+      <span class="location-icon">◇</span>
+      <span class="location-name">TOOLKIT</span>
+      <small>MY INVENTORY</small>
+    </button>
+
+    <!-- RESUME -->
+    <button
+      class="world-location location-resume"
+      data-map-target="resume"
+      type="button"
+    >
+      <span class="location-icon">▤</span>
+      <span class="location-name">RESUME</span>
+      <small>DOCUMENT.EXE</small>
+    </button>
+
+    <!-- CONTACT -->
+    <button
+      class="world-location location-contact"
+      data-map-target="contact"
+      type="button"
+    >
+      <span class="location-icon">♥</span>
+      <span class="location-name">CONTACT</span>
+      <small>FINAL LEVEL</small>
+    </button>
+
+    <!-- PLAYER -->
+    <div id="map-player" aria-label="Katyani">
+  👩🏻‍💻
+</div>
+
+    <!-- SECRET -->
+    <button
+      class="secret-location"
+      id="secret-location"
+      type="button"
+      aria-label="Unknown location"
+    >
+      ?
+    </button>
+
+    <div class="map-legend">
+      <span>MAP v1.0</span>
+      <span>6 LOCATIONS</span>
+      <span id="map-progress">0 / 6 DISCOVERED</span>
+    </div>
+
+  </div>
+
+  <p class="map-note">
+    every place leads somewhere interesting. →
+  </p>
+</section>
+
+      <section class="profile section-shell" id="profile">
+        <div class="section-label">02 / WHO'S THIS?</div>
+        <div class="profile-grid">
+          <div class="profile-title">
+            <p class="eyebrow">[ PLAYER PROFILE ]</p>
+            <h2>KATYANI<br />REDDY <span>♡</span></h2>
+            <dl class="profile-facts">
+              <div><dt>ROLE</dt><dd>AI/ML Student<br />Software Builder<br />Product Thinker<br />Creative Technologist</dd></div>
+              <div><dt>LOCATION</dt><dd>India</dd></div>
+              <div><dt>CURRENT LEVEL</dt><dd>2nd Year</dd></div>
+            </dl>
+          </div>
+          <div class="profile-character">
+  <img
+    src="assets/about-character.png"
+    alt="Katyani character"
+  />
+</div>
+          <div class="profile-story">
+            <p>I like turning random ideas into things people can actually use. I’m studying AI/ML, but I’m interested in much more than models and algorithms. I enjoy building products, experimenting with technology, solving real problems, and occasionally making something just because it would be fun.</p>
+            <div class="stats" aria-label="Playful character statistics">
+              <p>CHARACTER STATS <small>not evaluated by a recruiter</small></p>
+              <div><span>CURIOSITY</span><b class="meter full"></b></div>
+              <div><span>BUILDING</span><b class="meter nine"></b></div>
+              <div><span>CREATIVITY</span><b class="meter nine"></b></div>
+              <div><span>PROBLEM SOLVING</span><b class="meter eight"></b></div>
+              <div><span>CHAOS</span><b class="meter seven"></b></div>
+            </div>
+            <p class="profile-note">just a girl figuring it out<br />and loving it. ⟡</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="missions section-shell" id="missions">
+        <div class="section-label">03 / BUILT THIS.</div>
+       <div class="missions-heading">
+  <p class="eyebrow">// main missions</p>
+
+  <h2>BUILT<br />THIS.</h2>
+
+  <p class="missions-note">
+    real problems<br />
+    real fun →
+  </p>
+
+  <img
+    src="assets/missions-character.png"
+    alt=""
+    class="missions-character"
+  />
+</div>
+        <div class="mission-grid">
+          <article class="mission-card feature" data-project="locly" tabindex="0">
+            <div class="mission-top"><span>MISSION 01</span><i>BUILDING</i></div>
+            <h3>LOCly</h3>
+            <div class="mission-visual locly-visual"><div class="phone-map"><div class="map-route"></div><b>Locly</b><span class="map-pin one"></span><span class="map-pin two"></span></div></div>
+            <p>Your neighborhood, but actually social.</p>
+            <div class="chip-row"><span>React</span><span>Supabase</span><span>AI</span></div>
+            <button class="mission-action">ENTER MISSION <b>→</b></button>
+          </article>
+          <article class="mission-card" data-project="signbridge" tabindex="0">
+            <div class="mission-top"><span>MISSION 02</span><i>PROTOTYPE</i></div>
+            <h3>SignBridge</h3>
+            <div class="mission-visual sign-visual"><span>☝</span><i>⌁</i><b>hello.</b></div>
+            <p>Breaking communication barriers with AI.</p>
+            <div class="chip-row"><span>Python</span><span>CV</span><span>ML</span></div>
+            <button class="mission-action">ENTER MISSION <b>→</b></button>
+          </article>
+          <article class="mission-card" data-project="schemify" tabindex="0">
+            <div class="mission-top"><span>MISSION 03</span><i>SHIPPED</i></div>
+            <h3>Schemify</h3>
+            <div class="mission-visual schemify-visual"><div class="mini-app"><b>schemify</b><span></span><span></span><span></span><i>✦</i></div></div>
+            <p>Making complicated forms feel less complicated.</p>
+            <div class="chip-row"><span>React</span><span>Firebase</span><span>UX</span></div>
+            <button class="mission-action">ENTER MISSION <b>→</b></button>
+          </article>
+          <article class="mission-card" data-project="monthmate" tabindex="0">
+
+  <div class="mission-top">
+    <span>MISSION 04</span>
+    <i>SHIPPED</i>
+  </div>
+
+  <h3>MonthMate</h3>
+
+  <div class="mission-visual monthmate-visual">
+    <div class="monthmate-preview">
+      <div class="monthmate-header">
+        <span>MonthMate ♥</span>
+        <b>APRIL 2026</b>
+      </div>
+
+      <div class="monthmate-calendar">
+        <span>01</span>
+        <span>02</span>
+        <span>03</span>
+        <span>04</span>
+        <span>05</span>
+        <span>06</span>
+        <span>07</span>
+        <span>08</span>
+        <span>09</span>
+      </div>
+
+      <div class="monthmate-task">
+        <span></span>
+        plan it. do it. slay it.
+      </div>
+    </div>
+  </div>
+
+  <p>Plan it. Do it. Slay it.</p>
+
+  <div class="chip-row">
+    <span>React</span>
+    <span>Vite</span>
+    <span>Tailwind</span>
+  </div>
+
+  <button class="mission-action">
+    ENTER MISSION <b>→</b>
+  </button>
+
+</article>
+<article class="mission-card" data-project="queryhive" tabindex="0">
+
+  <div class="mission-top">
+    <span>MISSION 05</span>
+    <i>PROTOTYPE</i>
+  </div>
+
+  <h3>QueryHive</h3>
+
+  <div class="mission-visual queryhive-visual">
+    <div class="queryhive-preview">
+
+      <div class="queryhive-top">
+        <span>QueryHive</span>
+        <b>AI SUPPORT</b>
+      </div>
+
+      <div class="queryhive-chat">
+        <div class="query-user">
+          How can I reset my password?
+        </div>
+
+        <div class="query-ai">
+          <span>✦</span>
+          I found the answer in your knowledge base.
+        </div>
+      </div>
+
+      <div class="queryhive-input">
+        Ask your knowledge base...
+        <b>→</b>
+      </div>
+
+    </div>
+  </div>
+
+  <p>Answers from your own knowledge base.</p>
+
+  <div class="chip-row">
+    <span>Next.js</span>
+    <span>FastAPI</span>
+    <span>RAG</span>
+  </div>
+
+  <button class="mission-action">
+    ENTER MISSION <b>→</b>
+  </button>
+
+</article>
+<article class="mission-card" data-project="heardthat" tabindex="0">
+
+  <div class="mission-top">
+    <span>MISSION 06</span>
+    <i>SHIPPED</i>
+  </div>
+
+  <h3>Heard That?</h3>
+
+  <div class="mission-visual heardthat-visual">
+    <div class="heardthat-preview">
+
+      <div class="heardthat-top">
+        <span>HEARD THAT?</span>
+        <b>BANGALORE</b>
+      </div>
+
+      <div class="heardthat-events">
+        <div class="heard-event">
+          <span>TONIGHT</span>
+          <strong>LIVE MUSIC</strong>
+          <small>INDIRANAGAR</small>
+        </div>
+
+        <div class="heard-event">
+          <span>THIS WEEK</span>
+          <strong>COMMUNITY</strong>
+          <small>CHURCH STREET</small>
+        </div>
+      </div>
+
+      <div class="heardthat-sticker">
+        EVENTS · VIBES · MEMORIES ♡
+      </div>
+
+    </div>
+  </div>
+
+  <p>A place for events, memories, vibes & shared experiences.</p>
+
+  <div class="chip-row">
+    <span>Next.js</span>
+    <span>GSAP</span>
+    <span>Framer</span>
+  </div>
+
+  <button class="mission-action">
+    ENTER MISSION <b>→</b>
+  </button>
+
+</article>
+<article class="mission-card" data-project="quantumxdelta" tabindex="0">
+
+  <div class="mission-top">
+    <span>MISSION 07</span>
+    <i>SHIPPED</i>
+  </div>
+
+  <h3>QuantumXDelta</h3>
+
+  <div class="mission-visual quantumxdelta-visual">
+    <div class="quantum-preview">
+
+      <div class="quantum-top">
+        <span>QUANTUM X DELTA</span>
+        <b>EDUCATION</b>
+      </div>
+
+      <div class="quantum-content">
+        <div class="quantum-admission">
+          <small>ADMISSIONS OPEN</small>
+          <strong>START YOUR<br>JOURNEY.</strong>
+          <span>APPLY NOW →</span>
+        </div>
+
+        <div class="quantum-ai">
+          <span>✦ AI ASSISTANT</span>
+          <p>How can I help you?</p>
+          <b>ASK ANYTHING...</b>
+        </div>
+      </div>
+
+      <div class="quantum-admin">
+        LIVE DASHBOARD <span>●</span>
+      </div>
+
+    </div>
+  </div>
+
+  <p>Education, but a little smarter.</p>
+
+  <div class="chip-row">
+    <span>Next.js</span>
+    <span>AI</span>
+    <span>Dashboard</span>
+  </div>
+
+  <button class="mission-action">
+    ENTER MISSION <b>→</b>
+  </button>
+
+</article>
+<article class="mission-card" data-project="heartlift" tabindex="0">
+
+  <div class="mission-top">
+    <span>MISSION 08</span>
+    <i>BUILDING</i>
+  </div>
+
+  <h3>HeartLift</h3>
+
+  <div class="mission-visual heartlift-visual">
+    <div class="heartlift-preview">
+
+      <div class="heartlift-top">
+        <span>HeartLift ♥</span>
+        <b>DAY 07</b>
+      </div>
+
+      <div class="heartlift-mood">
+        <small>HOW ARE YOU FEELING?</small>
+        <div class="mood-options">
+          <span>☹</span>
+          <span>◡</span>
+          <span>☺</span>
+          <span>♥</span>
+        </div>
+      </div>
+
+      <div class="heartlift-plan">
+        <small>TODAY'S HEALING PLAN</small>
+        <strong>Take yourself<br>out for a walk.</strong>
+        <b>+20 XP</b>
+      </div>
+
+      <div class="heartlift-coach">
+        <span>✦ AI COACH</span>
+        <p>You've got this. One day at a time. ♡</p>
+      </div>
+
+    </div>
+  </div>
+
+  <p>Heal. Glow up. Move forward.</p>
+
+  <div class="chip-row">
+    <span>AI</span>
+    <span>React</span>
+    <span>Community</span>
+  </div>
+
+  <button class="mission-action">
+    ENTER MISSION <b>→</b>
+  </button>
+
+</article>
+          <article class="mission-card more-card" tabindex="0">
+            <div class="mission-top"><span>MISSION 04</span></div><h3>More on<br />the way...</h3>
+            <div class="folder-icon">?</div><p>Because ideas never stop.</p><button class="mission-action" data-more>STAY TUNED <b>↗</b></button>
+          </article>
+        </div>
+      </section>
+
+      <section class="toolkit section-shell" id="toolkit">
+        <div class="section-label">04 / MY TOOLKIT.</div>
+        <div class="toolkit-heading">
+
+  <p class="eyebrow">// inventory</p>
+
+  <h2>MY<br />TOOLKIT.</h2>
+
+  <p class="toolkit-note">
+    tools that<br />
+    help me turn<br />
+    ideas into things. ✧
+  </p>
+
+  <img
+    src="assets/toolkit-character.png"
+    alt=""
+    class="toolkit-character"
+  />
+
+</div>
+        <div class="tool-grid">
+          <article class="tool-card"><span class="tool-icon python">●</span><h3>PYTHON</h3><p>AI / ML<br />automation</p></article>
+          <article class="tool-card"><span class="tool-icon react">✳</span><h3>REACT</h3><p>web interfaces<br />front-end</p></article>
+          <article class="tool-card"><span class="tool-icon supabase">◆</span><h3>SUPABASE</h3><p>backend /<br />databases</p></article>
+          <article class="tool-card"><span class="tool-icon firebase">♦</span><h3>FIREBASE</h3><p>real-time<br />products</p></article>
+          <article class="tool-card"><span class="tool-icon git">◉</span><h3>GIT / GITHUB</h3><p>version control<br />sanity saver</p></article>
+          <article class="tool-card"><span class="tool-icon ai">✺</span><h3>AI / ML</h3><p>exploring<br />possibilities</p></article>
+          <article class="tool-card"><span class="tool-icon ux">◌</span><h3>UI / UX</h3><p>designing<br />better experiences</p></article>
+          <article class="tool-card"><span class="tool-icon product">◇</span><h3>PRODUCT</h3><p>turning ideas<br />into products</p></article>
+          <article class="tool-card"><span class="tool-icon figma">✦</span><h3>FIGMA</h3><p>because good<br />design matters</p></article>
+          <article class="tool-card surprise-tool" id="tool-surprise"><span class="tool-icon">?</span><h3>AND MORE...</h3><p>constantly<br />learning :)</p></article>
+        </div>
+      </section>
+
+      <section class="resume-section section-shell" id="resume">
+        <div class="section-label">05 / RESUME</div>
+        <div class="resume-layout">
+          <img
+  src="assets/resume-character.png"
+  alt=""
+  class="resume-character"
+/>
+          <div class="resume-copy">
+            <p class="eyebrow">// inventory / documents / 01</p>
+            <h2>THE<br /><em>USEFUL</em><br />STUFF.</h2>
+            <p>Some things deserve their own little slot in the inventory.</p>
+            <p class="resume-note">Useful things are usually worth picking up.</p>
+          </div>
+          <div class="resume-interaction">
+            <article class="resume-item" id="resume-item">
+              <span class="item-found">ITEM FOUND</span>
+              <div class="resume-window-bar"><i></i><span>documents / 01</span><b>×</b></div>
+              <div class="resume-file-content">
+                <div class="file-icon" aria-hidden="true">▤</div>
+                <div><h3>KATYANI_<br />RESUME.EXE</h3><p>RARE ITEM</p></div>
+                <dl>
+                  <div><dt>FORMAT</dt><dd>Resume • PDF</dd></div>
+                  <div><dt>UPDATED</dt><dd>2026</dd></div>
+                  <div><dt>SIZE</dt><dd>2.4 MB</dd></div>
+                </dl>
+              </div>
+              <button class="pickup-button" id="pickup-button">PICK UP <span>↓</span></button>
+            </article>
+            <div class="acquired-panel" id="acquired-panel" aria-live="polite" aria-hidden="true">
+              <p><b>ITEM ACQUIRED</b> <span>✓</span></p>
+              <div class="resume-actions">
+                <a class="resume-action" href="assets/KATYANI_RESUME.pdf" target="_blank" rel="noopener">VIEW RESUME <span>↗</span></a>
+                <a class="resume-action secondary" href="assets/KATYANI_RESUME.pdf" download="Katyani_Reddy_Resume.pdf">DOWNLOAD PDF <span>↓</span></a>
+              </div>
+              <button class="sound-toggle" id="sound-toggle" aria-pressed="false">UI SOUND: OFF</button>
+            </div>
+            <p class="resume-slot-message" id="resume-slot-message">Resume PDF synced to inventory.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="side-quests section-shell" id="side-quests">
+        <div class="section-label">06 / SIDE QUESTS.</div>
+<div class="sidequests-heading">
+
+  <p class="eyebrow">// off the main path</p>
+
+  <h2>SIDE<br /><span class="underline">QUESTS.</span></h2>
+
+  <p class="sidequests-subtitle">
+    Because I do more than just code.
+  </p>
+
+  <p class="sidequests-note">
+    different skills<br />
+    same main character. ♡
+  </p>
+
+  <img
+    src="assets/sidequests-character.png"
+    alt=""
+    class="sidequests-character"
+  />
+
+</div>
+        <div class="quest-grid">
+          <article class="quest-card"><span>#01</span><div class="quest-icon">♬</div><h3>HOSTING EVENTS</h3><p>XP +250</p><small>Turns out talking to hundreds of people is also a useful skill.</small></article>
+          <article class="quest-card"><span>#02</span><div class="quest-icon">♧</div><h3>FASHION SHOWS</h3><p>XP +200</p><small>Organising, coordinating and making chaos look intentional.</small></article>
+          <article class="quest-card"><span>#03</span><div class="quest-icon">◫</div><h3>DRAMA PERFORMANCES</h3><p>XP +180</p><small>On stage and off stage — storytelling always wins.</small></article>
+          <article class="quest-card"><span>#04</span><div class="quest-icon">◉</div><h3>CREATIVE PROJECTS</h3><p>XP +150</p><small>DIY, design, random ideas, and everything in between.</small></article>
+        </div>
+        <button class="folder-tease" id="ideas-folder"><span>▱</span> 404 IDEAS <small>(DO NOT OPEN)</small></button>
+        <div class="ideas-window" id="ideas-window" aria-hidden="true">
+
+  <div class="ideas-window-bar">
+    <span>ideas.exe</span>
+
+    <div class="ideas-window-controls">
+      <span>−</span>
+      <span>□</span>
+      <button id="ideas-close">×</button>
+    </div>
+  </div>
+
+  <div class="ideas-window-content">
+
+    <div class="ideas-topline">
+      <span>DROP IT.</span>
+      <span>SPARK IT.</span>
+      <span>MAYBE WE BUILD IT.</span>
+    </div>
+
+    <div class="ideas-heading">
+      <div class="idea-count">
+        IDEA COUNT:
+        <strong id="idea-count">000</strong>
+      </div>
+
+      <p class="ideas-kicker">404 / IDEAS NOT FOUND</p>
+
+      <h2>
+        <span>404</span> IDEAS
+      </h2>
+
+      <p class="ideas-subtitle">
+        not found? good.<br>
+        that means there's room for more.
+      </p>
+    </div>
+
+    <div class="idea-drop-zone">
+
+  <!-- left sticky note -->
+  <div class="idea-sticky sticky-left">
+    <strong>WEIRD<br>IDEAS<br>WELCOME</strong>
+    <span>♡</span>
+  </div>
+
+  <!-- kitten + idea pot -->
+  <div class="idea-pot-scene">
+
+    <div class="kitten">
+      <div class="kitten-ear ear-left"></div>
+      <div class="kitten-ear ear-right"></div>
+
+      <div class="kitten-face">
+        <span class="kitten-eye eye-left">●</span>
+        <span class="kitten-eye eye-right">●</span>
+        <span class="kitten-nose">⌄</span>
+      </div>
+
+      <div class="kitten-paw paw-left"></div>
+      <div class="kitten-paw paw-right"></div>
+    </div>
+
+    <div class="idea-pot">
+      <div class="pot-rim"></div>
+
+      <div class="pot-body">
+        <strong>
+          DROP YOUR<br>
+          IDEA HERE
+        </strong>
+
+        <span>♡</span>
+      </div>
+    </div>
+
+    <div class="pot-leaf leaf-left">❧</div>
+    <div class="pot-leaf leaf-right">❧</div>
+
+    <div class="idea-shadow"></div>
+
+    <div class="idea-speech">
+      curious minds<br>
+      live here ♡
+    </div>
+
+  </div>
+
+  <!-- right sticky note -->
+  <div class="idea-sticky sticky-right">
+    <strong>IDEAS<br>TODAY:</strong>
+    <p>a quieter<br>internet ♡</p>
+  </div>
+
+</div>
+
+    <div class="idea-input-wrap">
+
+      <textarea
+        id="idea-input"
+        maxlength="180"
+        placeholder="type your weirdest / smartest / half-baked idea..."
+        rows="3"
+      ></textarea>
+
+      <div class="idea-input-bottom">
+
+        <label>
+          <input type="checkbox" id="anonymous-idea" checked>
+          <span>you can be anonymous!</span>
+        </label>
+
+        <span id="idea-limit">0 / 180</span>
+
+      </div>
+
+    </div>
+
+    <button class="drop-idea-button" id="drop-idea-button">
+      DROP IT <span>→</span>
+    </button>
+
+    <div class="idea-message" id="idea-message"></div>
+
+    <div class="recent-drops">
+
+      <div class="recent-drops-title">
+        <span>⌛</span>
+        RECENT DROPS
+        <span class="infinity">1 / ∞</span>
+      </div>
+
+      <div class="idea-drops" id="idea-drops">
+
+        <div class="idea-note">
+          <span>“an app that makes<br>boring PDFs fun”</span>
+        </div>
+
+        <div class="idea-note lilac">
+          <span>“what if college<br>had side quests?”</span>
+        </div>
+
+        <div class="idea-note">
+          <span>“a social app<br>for real life”</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+        <div class="landscape" aria-hidden="true"><i></i><i></i><i></i><span>♟</span><span>✿</span><span>♙</span></div>
+      </section>
+
+      <section class="contact section-shell" id="contact">
+        <div class="section-label">07 / FINAL LEVEL</div>
+        <div class="contact-grid">
+          <div>
+            <p class="eyebrow" class="pink-underline">// final level</p><h2>YOU MADE<br />IT THIS FAR.</h2>
+            <p class="contact-question">WANT TO BUILD SOMETHING WEIRD,<br />USEFUL, OR BOTH?</p><p class="lets-talk">Let’s talk.</p>
+            <a class="primary-button magnetic" href="mailto:hello@katyani.dev">START A CONVERSATION <span>→</span></a>
+            <div class="social-links">
+              <a href="mailto:hello@katyani.dev">✉ EMAIL</a><a href="#" aria-label="Add Katyani's LinkedIn URL">in LINKEDIN</a><a href="#" aria-label="Add Katyani's GitHub URL">◉ GITHUB</a><a href="#" aria-label="Add Katyani's Instagram URL">◎ INSTAGRAM</a>
+            </div>
+          </div>
+          <div class="contact-aside">
+            <p>open to<br />opportunities! :)</p>
+            <div class="talk-window"><div class="window-bar"><i></i><span>good_things.exe</span><b>×</b></div><div class="cat-face">◕‿◕</div><p>Good things happen<br />when curious people talk.<br /><br />Shall we? ♡</p><button class="yes-button" id="yes-button">YES</button><button class="maybe-button" id="maybe-button">DEFINITELY</button></div>
+            <img
+  src="assets/contact-character.png"
+  alt=""
+  class="contact-character"
+/>
+            <p class="opportunity"><span></span> OPEN TO OPPORTUNITIES</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><div><b>MISSION COMPLETE.</b><span>Thanks for playing. ♡</span></div><p>KATYANI.EXE © 2026<br /><em>Same girl. More ideas.</em></p></footer>
+
+    <dialog class="case-modal" id="case-modal" aria-labelledby="case-title">
+      <button class="modal-close" id="modal-close" aria-label="Close case study">×</button>
+      <div class="case-modal-inner">
+<div class="case-hero">
+
+  <div class="case-hero-copy">
+
+    <p class="eyebrow" id="case-kicker">
+      MISSION 01 / CASE STUDY
+    </p>
+
+    <h2 id="case-title">LOCly</h2>
+
+    <p class="case-lead" id="case-lead"></p>
+
+    <div class="case-meta">
+      <span id="case-type"></span>
+      <span id="case-status"></span>
+    </div>
+
+    <div class="case-description" id="case-description"></div>
+
+  </div>
+
+  <!-- IMAGE MUST BE HERE -->
+  <div class="case-visual" id="case-visual"></div>
+
+</div>
+
+  <div class="case-story" id="case-story"></div>
+
+ <div class="project-actions">
+
+  <a
+    class="project-action-button"
+    id="project-website"
+    href="#"
+    target="_blank"
+    rel="noopener"
+  >
+    OPEN WEBSITE ↗
+  </a>
+
+  <a
+    class="project-action-button"
+    id="project-github"
+    href="#"
+    target="_blank"
+    rel="noopener"
+  >
+    OPEN GITHUB ↗
+  </a>
+
+  <button class="primary-button close-modal-button">
+    BACK TO MISSIONS <span>←</span>
+  </button>
+
+</div>
+
+</div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="xp-popup" id="xp-popup" aria-hidden="true">
+  <div class="xp-popup-box">
+
+    <button class="xp-popup-close" id="xp-popup-close">×</button>
+
+    <span class="xp-popup-kicker">KATYANI.EXE / PLAYER REPORT</span>
+
+    <h3>HOW MUCH DID YOU EXPLORE?</h3>
+
+    <div class="xp-popup-xp">
+      <strong id="popup-xp">0</strong>
+      <span>/ 100 XP</span>
+    </div>
+
+    <div class="xp-popup-progress">
+      <span id="popup-xp-bar"></span>
+    </div>
+
+    <div class="xp-popup-found" id="popup-found"></div>
+
+    <p class="xp-popup-message" id="popup-message"></p>
+
+  </div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
