@@ -118,8 +118,8 @@ signbridge: {
 
   image: 'assets/signbridge.png',
 
-  website: 'YOUR_SIGNBRIDGE_WEBSITE_URL',
-  github: 'YOUR_SIGNBRIDGE_GITHUB_URL',
+  website: 'https://signbridge-gamma.vercel.app/',
+  github: 'https://github.com/katyanireddy/signbridge',
 
   description:
     'An AI-powered sign language translation project that uses computer vision to recognize hand gestures and convert them into understandable communication.',
@@ -164,7 +164,7 @@ signbridge: {
   image: 'assets/schemify.png',
 
   website: 'YOUR_SCHEMIFY_WEBSITE_URL',
-  github: 'YOUR_SCHEMIFY_GITHUB_URL',
+  github: 'https://github.com/katyanireddy/schemify',
 
   description:
     'An AI-powered scholarship and scheme matcher designed to help students discover opportunities they are eligible for and understand what they need to apply.',
@@ -252,7 +252,7 @@ queryhive: {
   image: 'assets/queryhive.png',
 
   website: 'YOUR_QUERYHIVE_WEBSITE_URL',
-  github: 'YOUR_QUERYHIVE_GITHUB_URL',
+  github: 'https://github.com/katyanireddy/queryhive',
 
   description:
     'An AI-powered customer support platform that uses Retrieval-Augmented Generation to provide answers grounded in a company’s own knowledge base.',
@@ -293,7 +293,7 @@ heardthat: {
   type: 'TYPE: COMMUNITY / WEB / EVENTS',
   status: 'STATUS: SHIPPED',
 
-  image: 'assets/heard-that.png',
+  image: 'assets/heardthat.png',
 
   website: 'https://heard-that-sand.vercel.app/',
   github: 'https://github.com/katyanireddy/heard-that',
@@ -340,7 +340,7 @@ quantumxdelta: {
   image: 'assets/quantumxdelta.png',
 
   website: 'https://quantumxdelta.vercel.app/',
-  github: 'YOUR_QUANTUMXDELTA_GITHUB_URL',
+  github: 'https://github.com/katyanireddy/quantumxdelta',
 
   description:
     'A modern school and coaching website featuring an admission system, live admin dashboard, and an AI chatbot designed to assist students in real time.',
