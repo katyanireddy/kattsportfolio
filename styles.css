@@ -4293,3 +4293,98 @@ body.recruiter-mode #resume .resume-slot-message {
   background: #d58ddd;
   transform: rotate(-1.5deg);
 }
+/* =========================================
+   SIDE QUEST WALKING ANIMATION
+========================================= */
+
+#side-quest-animation {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+
+  overflow: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+#side-quest-animation.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* CHARACTER */
+
+#side-quest-character {
+  position: absolute;
+
+  width: 210px;
+  height: auto;
+
+  left: -240px;
+  bottom: 8vh;
+
+  object-fit: contain;
+
+  filter: drop-shadow(
+    6px 8px 5px rgba(0, 0, 0, .18)
+  );
+
+  will-change: left, transform;
+}
+
+
+/* =========================================
+   FASHION WALK
+========================================= */
+
+#side-quest-animation.fashion
+#side-quest-character {
+
+  animation:
+    fashion-screen-walk
+    3s
+    linear
+    forwards;
+}
+
+
+@keyframes fashion-screen-walk {
+
+  0% {
+    left: -240px;
+  }
+
+  15% {
+    left: 5%;
+  }
+
+  50% {
+    left: 42%;
+  }
+
+  85% {
+    left: 78%;
+  }
+
+  100% {
+    left: calc(100% + 40px);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  #side-quest-character {
+    width: 150px;
+    bottom: 10vh;
+  }
+
+}

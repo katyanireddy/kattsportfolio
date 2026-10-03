@@ -58,7 +58,7 @@
           <h2>Hi, I’m <em>Katyani.</em></h2>
           <p class="hero-intro">I build things that usually start with <span>“what if...”</span></p>
           <p class="hero-tags">AI/ML <b>•</b> SOFTWARE <b>•</b> PRODUCT <b>•</b> CREATIVE TECH</p>
-          <a class="primary-button magnetic" href="#missions">EXPLORE MY WORLD <span>→</span></a>
+          <a class="primary-button magnetic" href="#world-map">EXPLORE MY WORLD <span>→</span></a>
           <div class="recruiter-quick-info">
 
   <div>
@@ -130,7 +130,7 @@
   <div class="world-map-heading">
     <div>
       <p class="eyebrow">// choose your destination</p>
-      <h2>MY<br><em>WORLD.</em></h2>
+      <h2>MY <em>WORLD.</em></h2>
     </div>
 
     <div class="world-status">
@@ -658,7 +658,7 @@
 
   <p class="eyebrow">// off the main path</p>
 
-  <h2>SIDE<br /><span class="underline">QUESTS.</span></h2>
+  <h2>SIDE<br /><em>QUESTS.</em></h2>
 
   <p class="sidequests-subtitle">
     Because I do more than just code.
@@ -677,10 +677,10 @@
 
 </div>
         <div class="quest-grid">
-          <article class="quest-card"><span>#01</span><div class="quest-icon">♬</div><h3>HOSTING EVENTS</h3><p>XP +250</p><small>Turns out talking to hundreds of people is also a useful skill.</small></article>
-          <article class="quest-card"><span>#02</span><div class="quest-icon">♧</div><h3>FASHION SHOWS</h3><p>XP +200</p><small>Organising, coordinating and making chaos look intentional.</small></article>
-          <article class="quest-card"><span>#03</span><div class="quest-icon">◫</div><h3>DRAMA PERFORMANCES</h3><p>XP +180</p><small>On stage and off stage — storytelling always wins.</small></article>
-          <article class="quest-card"><span>#04</span><div class="quest-icon">◉</div><h3>CREATIVE PROJECTS</h3><p>XP +150</p><small>DIY, design, random ideas, and everything in between.</small></article>
+          <article class="quest-card" data-quest="hosting"><span>#01</span><div class="quest-icon">♬</div><h3>HOSTING EVENTS</h3><p>XP +250</p><small>Turns out talking to hundreds of people is also a useful skill.</small></article>
+          <article class="quest-card" data-quest="fashion"><span>#02</span><div class="quest-icon">♧</div><h3>FASHION SHOWS</h3><p>XP +200</p><small>Organising, coordinating and making chaos look intentional.</small></article>
+          <article class="quest-card" data-quest="drama"><span>#03</span><div class="quest-icon">◫</div><h3>DRAMA PERFORMANCES</h3><p>XP +180</p><small>On stage and off stage — storytelling always wins.</small></article>
+          <article class="quest-card" data-quest="creative"><span>#04</span><div class="quest-icon">◉</div><h3>CREATIVE PROJECTS</h3><p>XP +150</p><small>DIY, design, random ideas, and everything in between.</small></article>
         </div>
         <button class="folder-tease" id="ideas-folder"><span>▱</span> 404 IDEAS <small>(DO NOT OPEN)</small></button>
         <div class="ideas-window" id="ideas-window" aria-hidden="true">
@@ -845,9 +845,9 @@
           <div>
             <p class="eyebrow" class="pink-underline">// final level</p><h2>YOU MADE<br />IT THIS FAR.</h2>
             <p class="contact-question">WANT TO BUILD SOMETHING WEIRD,<br />USEFUL, OR BOTH?</p><p class="lets-talk">Let’s talk.</p>
-            <a class="primary-button magnetic" href="mailto:hello@katyani.dev">START A CONVERSATION <span>→</span></a>
+            <a class="primary-button magnetic" class="yes-button" id="yes-button">START A CONVERSATION <span>→</span></a>
             <div class="social-links">
-              <a href="mailto:hello@katyani.dev">✉ EMAIL</a><a href="#" aria-label="Add Katyani's LinkedIn URL">in LINKEDIN</a><a href="#" aria-label="Add Katyani's GitHub URL">◉ GITHUB</a><a href="#" aria-label="Add Katyani's Instagram URL">◎ INSTAGRAM</a>
+              <a href="mailto:katyanireddy17@gmail.com">✉ EMAIL</a><a href="https://www.linkedin.com/in/katyanireddy/" aria-label="Add Katyani's LinkedIn URL">in LINKEDIN</a><a href="https://github.com/katyanireddy" aria-label="Add Katyani's GitHub URL">◉ GITHUB</a><a href="https://www.instagram.com/wuzz.katt/" aria-label="Add Katyani's Instagram URL">◎ INSTAGRAM</a>
             </div>
           </div>
           <div class="contact-aside">
@@ -951,6 +951,10 @@
     <p class="xp-popup-message" id="popup-message"></p>
 
   </div>
+</div>
+<!-- SIDE QUEST CHARACTER ANIMATION -->
+<div id="side-quest-animation" aria-hidden="true">
+  <img id="side-quest-character" src="" alt="">
 </div>
     <script src="script.js"></script>
   </body>

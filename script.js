@@ -724,9 +724,19 @@ function updateXPPopup() {
 
   requestAnimationFrame(animateXP);
 }
-document.getElementById('yes-button').addEventListener('click', () => showToast('Nice choice. A conversation is loading...')); 
-document.querySelector('.maybe-button').addEventListener('click', () => showToast('Correct answer unlocked. Definitely it is.'));
+document.getElementById('yes-button').addEventListener('click', () => {
+  window.open(
+    'https://wa.me/917691833047?text=Hey%20Katyani!%20I%20found%20your%20portfolio%20and%20wanted%20to%20talk.',
+    'Hey Katyani! I found your portfolio and wanted to talk.',
+  );
+});
 
+document.querySelector('.maybe-button').addEventListener('click', () => {
+  window.open(
+    'https://wa.me/917691833047?text=Hey%20Katyani!%20Definitely%20want%20to%20connect!',
+    '_blank'
+  );
+});
 const pickupButton = document.getElementById('pickup-button');
 const acquiredPanel = document.getElementById('acquired-panel');
 const soundToggle = document.getElementById('sound-toggle');
@@ -1556,3 +1566,94 @@ if (heroPortrait && heroCharacter) {
   });
 
 }
+/* ===== SIDE QUEST FRAME ANIMATION ===== */
+
+const sideQuestAnimation =
+  document.getElementById('side-quest-animation');
+
+const sideQuestCharacter =
+  document.getElementById('side-quest-character');
+
+
+const sideQuestFrames = {
+
+  fashion: [
+    'assets/fashion-1.png',
+    'assets/fashion-2.png',
+    'assets/fashion-3.png',
+    'assets/fashion-4.png'
+  ]
+
+};
+
+
+let frameTimer;
+
+
+function playSideQuestAnimation(type) {
+  const frames = sideQuestFrames[type];
+
+  if (!frames || !sideQuestAnimation || !sideQuestCharacter) return;
+
+  // baaki existing code yahin se continue hoga
+
+  /* Stop previous animation */
+  clearInterval(frameTimer);
+
+  /* Reset */
+  sideQuestAnimation.className = '';
+  sideQuestCharacter.style.animation = 'none';
+
+  /* First frame */
+  let frame = 0;
+
+  sideQuestCharacter.src = frames[frame];
+
+  /* Force CSS animation restart */
+  void sideQuestCharacter.offsetWidth;
+
+  /* Start movement */
+  sideQuestAnimation.classList.add('active', type);
+
+  /* Change walking frame */
+  frameTimer = setInterval(() => {
+
+    frame++;
+
+    if (frame >= frames.length) {
+      frame = 0;
+    }
+
+    sideQuestCharacter.src = frames[frame];
+
+  }, 180);
+
+
+  /* Stop after 3 seconds */
+  setTimeout(() => {
+
+    clearInterval(frameTimer);
+
+    sideQuestAnimation.classList.remove(
+      'active',
+      type
+    );
+
+  }, 3000);
+
+}
+
+
+/* ===== SIDE QUEST CLICK ===== */
+
+document.querySelectorAll('.quest-card').forEach((card) => {
+
+  card.addEventListener('click', () => {
+
+    const quest = card.dataset.quest;
+
+    playSideQuestAnimation(quest);
+
+  });
+
+});
