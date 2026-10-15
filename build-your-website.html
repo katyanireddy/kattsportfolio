@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f3eb" />
+  <title>Let's Build Your Website — KATYANI.EXE</title>
+  <meta
+    name="description"
+    content="Build your dream website with the KATYANI.EXE interactive website price estimator."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="website-builder.css" />
+</head>
+
+<body class="website-builder-page">
+
+  <header class="wb-nav">
+    <a class="wb-wordmark" href="index.html">KATYANI.EXE</a>
+
+    <span class="wb-nav-label">SIDE QUEST / WEBSITE BUILDER</span>
+
+    <a class="wb-back" href="index.html">← BACK TO PORTFOLIO</a>
+  </header>
+
+  <main class="wb-container">
+
+    <section class="wb-hero">
+      <p class="wb-breadcrumb">
+        KATYANI.EXE / SIDE QUEST / WEBSITE BUILDER
+      </p>
+
+      <h1>
+        LET'S BUILD YOUR<br />
+        <span>WEBSITE.</span>
+      </h1>
+
+      <p class="wb-subtitle">
+        Pick your pieces. Get your price. No awkward guessing.
+      </p>
+
+      <p class="wb-note">
+        same ideas, different websites. ♡
+      </p>
+
+<div class="wb-hero-collage" aria-label="Website builder illustration">
+  <img
+    class="wb-hero-character"
+    src="assets/website.png"
+    alt="Katyani's illustrated character"
+  />
+
+  <div class="wb-speech-note">
+    tell me what you need<br />
+    and i'll build it ♡
+  </div>
+
+  <div class="wb-idea-note">
+    • ideas<br />
+    • design<br />
+    • code<br />
+    • deploy<br />
+    • you happy :)
+  </div>
+
+  <span class="wb-heart-doodle wb-heart-one">♡</span>
+  <span class="wb-heart-doodle wb-heart-two">♥</span>
+</div>
+
+    </section>
+
+    <section class="wb-layout">
+
+      <div class="wb-form-column">
+
+        <section class="wb-section" id="website-types">
+          <p class="wb-step">01 / WHAT ARE WE MAKING?</p>
+          <p class="wb-help">
+            Choose the closest option. You can customise more later.
+          </p>
+
+          <div class="wb-type-grid" id="website-type-grid">
+            <!-- Website type cards will be added next. -->
+          </div>
+        </section>
+
+        <section class="wb-section">
+          <p class="wb-step">02 / MAKE IT YOURS</p>
+          <p class="wb-help">Tell me a few details.</p>
+
+          <div class="wb-field">
+            <label for="wb-pages">Number of pages / main screens</label>
+
+            <div class="wb-page-controls">
+              <button type="button" id="wb-minus" aria-label="Remove one page">−</button>
+
+              <input
+                type="range"
+                id="wb-pages"
+                min="1"
+                max="20"
+                value="5"
+              />
+
+              <button type="button" id="wb-plus" aria-label="Add one page">+</button>
+
+              <output id="wb-page-count" for="wb-pages">5 pages</output>
+            </div>
+          </div>
+
+          <div class="wb-field">
+            <p class="wb-label">Design level</p>
+            <div class="wb-choice-grid" id="wb-design-options"></div>
+          </div>
+        </section>
+
+        <section class="wb-section">
+          <p class="wb-step">03 / ADD YOUR EXTRAS</p>
+          <p class="wb-help">Choose the features you need.</p>
+
+          <div class="wb-feature-grid" id="wb-feature-options"></div>
+        </section>
+
+        <section class="wb-section">
+          <p class="wb-step">04 / CONTENT</p>
+          <div id="wb-content-options"></div>
+        </section>
+
+        <section class="wb-section">
+          <p class="wb-step">05 / DELIVERY</p>
+          <div id="wb-delivery-options"></div>
+        </section>
+
+        <section class="wb-section">
+          <p class="wb-step">06 / MAINTENANCE + HOSTING</p>
+          <div id="wb-maintenance-options"></div>
+        </section>
+
+      </div>
+
+      <aside class="wb-estimate" aria-label="Live website estimate">
+
+        <div class="wb-window-bar">
+          <span class="wb-dot wb-red"></span>
+          <span class="wb-dot wb-yellow"></span>
+          <span class="wb-dot wb-green"></span>
+          <strong>YOUR ESTIMATE ✦</strong>
+        </div>
+
+        <div class="wb-estimate-body">
+          <p class="wb-label">Estimated one-time price</p>
+
+          <output class="wb-total" id="wb-total" aria-live="polite">
+            ₹6,500
+          </output>
+
+          <div class="wb-underline"></div>
+
+          <p class="wb-disclaimer">
+            An indicative estimate based on your selections.
+            The final quote may change after discussing your requirements.
+          </p>
+
+          <div class="wb-breakdown" id="wb-breakdown">
+            <p class="wb-empty">
+              Select your website type to begin ♡
+            </p>
+          </div>
+
+          <p class="wb-range">
+            Suggested range:
+            <strong id="wb-range">₹6,000 – ₹8,000</strong>
+          </p>
+
+          <p class="wb-maintenance-summary" id="wb-monthly">
+            Monthly maintenance: ₹0
+          </p>
+
+          <button type="button" class="wb-primary" id="wb-enquire">
+            ♥ LET'S MAKE IT REAL ↗
+          </button>
+
+          <button type="button" class="wb-secondary" id="wb-copy">
+            COPY PROJECT BRIEF
+          </button>
+
+          <button type="button" class="wb-secondary" id="wb-whatsapp">
+            ENQUIRE ON WHATSAPP ↗
+          </button>
+        </div>
+      </aside>
+
+    </section>
+
+    <footer class="wb-footer">
+      <a href="../index.html">← BACK TO KATYANI.EXE</a>
+      <span>GOOD IDEAS START HERE ♡</span>
+    </footer>
+
+  </main>
+
+  <div id="wb-toast" class="wb-toast" role="status" aria-live="polite"></div>
+
+  <script src="website-pricing.js"></script>
+</body>
+</html>

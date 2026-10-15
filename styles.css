@@ -4388,3 +4388,74 @@ body.recruiter-mode #resume .resume-slot-message {
   }
 
 }
+
+
+/* ===== WEBSITE BUILDER CTA ===== */
+
+.website-builder-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 420px;
+  margin-top: 18px;
+  padding: 17px 20px;
+  color: #171616;
+  background: #f7f3eb;
+  border: 1px solid #cfc8bd;
+  text-decoration: none;
+  transition: background 0.25s ease, border-color 0.25s ease,
+              transform 0.25s ease;
+}
+
+.website-builder-cta-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.website-builder-cta-copy small {
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: #69645f;
+}
+
+.website-builder-cta-copy strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.website-builder-cta-copy strong span {
+  color: #b76be8;
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.website-builder-cta-arrow {
+  font-size: 27px;
+  color: #b76be8;
+}
+
+.website-builder-cta:hover {
+  background: #eee1fa;
+  border-color: #b76be8;
+  transform: translateY(-2px);
+}
+
+.website-builder-cta:hover .website-builder-cta-copy strong span {
+  transform: translate(4px, -3px);
+}
+
+.website-builder-cta:focus-visible {
+  outline: 2px solid #b76be8;
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .website-builder-cta {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
