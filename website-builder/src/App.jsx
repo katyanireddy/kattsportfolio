@@ -183,7 +183,7 @@ function App() {
           <a href="/#side-quests">SIDE QUESTS.</a>
           <a href="/#contact">LET'S TALK.</a>
         </nav>
-        <a className="back-link" href="/">← BACK TO PORTFOLIO</a>
+        <a className="back-link" href="../index.html">← BACK TO PORTFOLIO</a>
       </header>
 
       <section className="hero">
